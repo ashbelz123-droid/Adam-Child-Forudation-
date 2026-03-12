@@ -1,0 +1,23 @@
+body{
+font-family:Arial;
+background:#f0f2f5;
+}
+
+#feed{
+width:600px;
+margin:auto;
+}
+
+.post{
+background:white;
+padding:15px;
+margin:10px;
+border-radius:6px;
+}
+
+button{
+background:#1877f2;
+color:white;
+border:none;
+padding:6px 10px;
+}
