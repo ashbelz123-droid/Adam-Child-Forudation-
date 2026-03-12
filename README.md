@@ -1,14 +1,19 @@
-Mini Facebook Clone
+MiniBook
+
+A small Facebook-style social site.
 
 Features
-- Post text, images, videos
+- Post text
+- Image and video posts
 - Visitors can like
 - Visitors can comment
 - Notifications
-- Simple feed UI
+- Facebook-style feed
 
 Run
 
 npm install
 node server/server.js
-open client/index.html
+
+Open:
+client/index.html
