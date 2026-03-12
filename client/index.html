@@ -2,23 +2,42 @@
 <html>
 <head>
 <title>MiniBook</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<h1>MiniBook</h1>
+<div class="navbar">
 
-<div id="createPost">
-<textarea id="postText"></textarea>
+<div class="logo">MiniBook</div>
+
+<input class="search" placeholder="Search">
+
+<div class="nav-icons">
+<a href="notifications.html">🔔</a>
+<a href="profile.html">👤</a>
+</div>
+
+</div>
+
+<div class="container">
+
+<div class="create-post">
+
+<textarea id="postText" placeholder="What's on your mind?"></textarea>
+
 <input id="imageUrl" placeholder="Image URL">
 <input id="videoUrl" placeholder="Video URL">
+
 <button onclick="createPost()">Post</button>
+
 </div>
 
 <div id="feed"></div>
 
-<script src="script.js"></script>
+</div>
+
+<script src="js/feed.js"></script>
 
 </body>
 </html>
