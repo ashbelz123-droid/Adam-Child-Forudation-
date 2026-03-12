@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin - Adam Child Foundation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Admin Panel</h2>
+
+<input id="title" placeholder="Project / Event title"><br><br>
+
+<textarea id="desc" placeholder="Description"></textarea><br><br>
+
+<input id="image" placeholder="Image URL"><br><br>
+
+<input id="video" placeholder="Video URL"><br><br>
+
+<button onclick="postProject()">Publish</button>
+
+<script>
+
+function postProject(){
+
+let post={
+title:document.getElementById("title").value,
+desc:document.getElementById("desc").value,
+image:document.getElementById("image").value,
+video:document.getElementById("video").value
+};
+
+let posts = JSON.parse(localStorage.getItem("posts")) || [];
+
+posts.push(post);
+
+localStorage.setItem("posts",JSON.stringify(posts));
+
+alert("Project Posted!");
+
+}
+
+</script>
+
+</body>
+</html>
